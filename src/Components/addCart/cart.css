@@ -1,0 +1,128 @@
+/* Main Cart Container */
+.cart-container {
+    max-width: 1200px;
+    margin: 105px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.empty-cart {
+    font-size: 1.5rem;
+    text-align: center;
+    color: #999;
+}
+
+/* Cart Items */
+.cart-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item-img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cart-item-details {
+    flex: 1;
+    margin-left: 20px;
+}
+
+.cart-item-details h4 {
+    font-size: 1.8rem;
+    color: #444;
+}
+
+.cart-item-details p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+.btn-remove, .btn-clear-cart, .btn-submit {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1rem;
+    margin: 5px;
+}
+
+.btn-remove:hover, .btn-clear-cart:hover, .btn-submit:hover {
+    background-color: #ff1a1a;
+}
+
+/* Total Price Section */
+.cart-total {
+    text-align: right;
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Form Styles */
+.cart-form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .cart-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-item-img {
+        width: 100%;
+    }
+
+    .cart-item-details {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+}
